@@ -1,0 +1,57 @@
+<RCC>
+  <qresource prefix="dark">
+    <file>icons/baseline_close_black_48dp.png</file>
+    <file>icons/baseline_minimize_black_48dp.png</file>
+    <file>icons/browser.png</file>
+    <file>icons/enlarge.png</file>
+    <file>icons - Copy/add_1st.png</file>
+    <file>icons - Copy/backArrow_2nd.png.png</file>
+    <file>icons - Copy/face-detection (2).png</file>
+    <file>icons - Copy/face-recognition_2nd.png</file>
+    <file>icons - Copy/group_2nd.png</file>
+    <file>icons - Copy/maximize_2rd.png</file>
+    <file>icons - Copy/menu_2nd.png</file>
+    <file>icons - Copy/minimize_2nd.png</file>
+    <file>icons - Copy/object-detection_2nd.png</file>
+    <file>icons - Copy/restore_2nd.png</file>
+  </qresource>
+  <qresource prefix="light">
+    <file>icons - Copy/add_2nd.png</file>
+    <file>icons - Copy/backArrow_1st.png</file>
+    <file>icons - Copy/face-detection (1).png</file>
+    <file>icons - Copy/face-recognition_1st.png</file>
+    <file>icons - Copy/group_1st.png</file>
+    <file>icons - Copy/maximize_1st.png</file>
+    <file>icons - Copy/menu_1st.png</file>
+    <file>icons - Copy/minimize_1st.png</file>
+    <file>icons - Copy/object-detection_1st.png</file>
+    <file>icons - Copy/restore.png</file>
+  </qresource>
+  <qresource prefix="3rd">
+    <file>icons - Copy/add_3rd.png</file>
+    <file>icons - Copy/backArrow_3rd.png.png</file>
+    <file>icons - Copy/group_3rd.png</file>
+    <file>icons - Copy/maximize_3rd.png</file>
+    <file>icons - Copy/menu_3rd.png</file>
+    <file>icons - Copy/minimize_3rd.png</file>
+    <file>icons - Copy/restore_3rd.png</file>
+  </qresource>
+  <qresource prefix="shared">
+    <file>icons - Copy/arretez.png</file>
+    <file>icons/previous.png</file>
+    <file>icons - Copy/pictures.png</file>
+    <file>icons - Copy/add_face.png</file>
+    <file>icons - Copy/add_Person.png</file>
+    <file>icons - Copy/close.png</file>
+    <file>icons - Copy/data_update.png</file>
+    <file>icons - Copy/data_update_2.png</file>
+    <file>icons - Copy/delete.png</file>
+    <file>icons - Copy/group_4rd.png</file>
+    <file>icons - Copy/group_colored.png</file>
+    <file>icons - Copy/logo.png</file>
+    <file>icons - Copy/msgbox.png</file>
+    <file>icons - Copy/remove_face.png</file>
+    <file>icons - Copy/remove_Person.png</file>
+    <file>icons - Copy/video-camera.png</file>
+  </qresource>
+</RCC>

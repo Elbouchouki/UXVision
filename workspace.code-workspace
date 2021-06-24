@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\cython"
+		},
+		{
+			"path": "..\\face_rec"
+		}
+	],
+	"settings": {}
+}

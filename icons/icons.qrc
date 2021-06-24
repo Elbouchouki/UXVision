@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="hamburger">
+    <file>baseline_menu_black_48dp.png</file>
+  </qresource>
+  <qresource prefix="utilities">
+    <file>noun_minimize_136337.png</file>
+    <file>browser.png</file>
+    <file>enlarge.png</file>
+    <file>Maximize-icon.png</file>
+    <file>baseline_add_black_48dp.png</file>
+    <file>baseline_close_black_48dp.png</file>
+    <file>baseline_minimize_black_48dp.png</file>
+    <file>Programming-Maximize-Window-icon.png</file>
+    <file>User-Interface-Restore-Window-icon.png</file>
+  </qresource>
+  <qresource prefix="face_recognition">
+    <file>user-images (1).png</file>
+    <file>user-images.png</file>
+    <file>icons8-face-id-100.png</file>
+  </qresource>
+  <qresource prefix="object_detection">
+    <file>baseline_radar_black_48dp.png</file>
+    <file>baseline_radar_white_48dp.png</file>
+    <file>Unknown-1.png</file>
+  </qresource>
+  <qresource prefix="person">
+    <file>baseline_people_alt_black_48dp.png</file>
+  </qresource>
+</RCC>
