@@ -155,32 +155,28 @@ class MainWindow(QtWidgets.QMainWindow):
             # mouse press event
 
     def face_img_detection(self):
-        # try:
-        print(1)
-        img = self.browseImage()
-        faces = Database().get_encoded_faces()
-        print(2)
-        imgResult, facesResult = FaceRecognition(
-            faces, None, None).classify_img(img)
-        width = int(imgResult.shape[1])
-        height = int(imgResult.shape[0])
-        width = int(
-            (imgResult.shape[1] * self.ui.frame_OD.height()) / imgResult.shape[0])
-        height = self.ui.frame_OD.height()
-        dim = (width, height)
-        imgResult = cv2.resize(
-            imgResult, dim, interpolation=cv2.INTER_AREA)
-        frame = cv2.cvtColor(imgResult, cv2.COLOR_BGRA2RGB)
-        image = QtGui.QImage(
-            frame, frame.shape[1], frame.shape[0], frame.strides[0], QImage.Format_RGB888)
-        print(3)
-        self.ui.detection_faceDetection_label.setPixmap(
-            QtGui.QPixmap.fromImage(image))
-        string = "Personnes : "+str(len(facesResult))
-        self.ui.warning_faceDetection_label.setText(string)
-        print(4)
-        # except:
-        #     pass
+        try:
+            img = self.browseImage()
+            faces = Database().get_encoded_faces()
+            imgResult, facesResult = FaceRecognition(
+                faces, None, None).classify_img(img)
+            width = int(imgResult.shape[1])
+            height = int(imgResult.shape[0])
+            width = int(
+                (imgResult.shape[1] * self.ui.frame_OD.height()) / imgResult.shape[0])
+            height = self.ui.frame_OD.height()
+            dim = (width, height)
+            imgResult = cv2.resize(
+                imgResult, dim, interpolation=cv2.INTER_AREA)
+            frame = cv2.cvtColor(imgResult, cv2.COLOR_BGRA2RGB)
+            image = QtGui.QImage(
+                frame, frame.shape[1], frame.shape[0], frame.strides[0], QImage.Format_RGB888)
+            self.ui.detection_faceDetection_label.setPixmap(
+                QtGui.QPixmap.fromImage(image))
+            string = "Personnes : "+str(len(facesResult))
+            self.ui.warning_faceDetection_label.setText(string)
+        except:
+            pass
 
     def stop_video_loop(self):
         self.VIDEO_STATE = 0
@@ -196,7 +192,6 @@ class MainWindow(QtWidgets.QMainWindow):
             if x != -1:
                 # Detection().setupYOLO()
                 cap = cv2.VideoCapture(x)
-
                 thread = ObjectDetection(cap, self.ui)
                 thread.start()
                 while True:
